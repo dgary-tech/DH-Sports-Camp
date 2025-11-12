@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH Sports Camp - Day Camp for Kids 8-12</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* A simple text-shadow for readability on hero images */
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Camp Logo/Name -->
+            <a href="#" class="text-2xl font-bold text-blue-700">
+                DH Sports Camp
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-700 font-medium">About Us</a>
+                <a href="#activities" class="text-gray-600 hover:text-blue-700 font-medium">Activities</a>
+                <a href="#details" class="text-gray-600 hover:text-blue-700 font-medium">Details</a>
+            </div>
+            
+            <!-- Call to Action Button -->
+            <a href="#register" class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition duration-300">
+                Register Now
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="h-[70vh] min-h-[400px] bg-cover bg-center flex flex-col justify-center items-center text-white relative"
+                 style="background-image: url('https://placehold.co/1600x900/2563EB/FFFFFF?text=Kids+Playing+Sports');">
+            <!-- Overlay for better text readability -->
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            
+            <div class="relative z-10 text-center p-4">
+                <h1 class="text-4xl md:text-6xl font-black text-shadow">Get in the Game This Summer</h1>
+                <p class="text-xl md:text-2xl mt-4 font-light text-shadow">The ultimate sports day camp for active kids ages 8-12.</p>
+                <a href="#register" class="mt-8 inline-block bg-orange-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition duration-300">
+                    Sign Up Today
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="container mx-auto px-6 py-16 md:py-24 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">Welcome to DH Sports Camp</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                At DH Sports Camp, we're passionate about sports, teamwork, and fun! Our day camp (for ages 8-12) provides a supportive and energetic environment to learn new skills, play their favorite games, and build character. We focus on sportsmanship and effort, with a dash of creative arts for a well-rounded camp experience.
+            </p>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities" class="bg-gray-100 py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">A Day Full of Action</h2>
+                
+                <!-- Activity Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Activity Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Team+Sports" 
+                             alt="Kids playing team sports" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Not+Found'">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Team Sports</h3>
+                            <p class="text-gray-700">Learn and play favorites like soccer, basketball, and flag football in a friendly setting.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Activity Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/FACC15/FFFFFF?text=Arts+&+Crafts" 
+                             alt="Children doing arts and crafts" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Not+Found'">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Creative Arts & Crafts</h3>
+                            <p class="text-gray-700">A perfect break from the action to paint, draw, and build cool projects.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Activity Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/84CC16/FFFFFF?text=Fun+Drills+&+Games" 
+                             alt="Kids running drills" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Not+Found'">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Skill-Building Drills</h3>
+                            <p class="text-gray-700">Fun games and drills to improve coordination, teamwork, and confidence.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Camp Details Section -->
+        <section id="details" class="py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">The Details</h2>
+                
+                <div class="bg-white p-8 md:p-12 rounded-lg shadow-xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Who</h3>
+                            <p class="text-lg text-gray-700">Adventurous kids ages 8 to 12.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">When</h3>
+                            <p class="text-lg text-gray-700">June 10th - August 16th, 2026<br>Monday - Friday, 9:00 AM - 4:00 PM</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Where</h3>
+                            <p class="text-lg text-gray-700">Oakridge Park Pavilion<br>123 Adventure Lane, Your City, ST</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Cost</h3>
+                            <p class="text-lg text-gray-700">$350 per camper, per week.<br><span class="text-sm">(Discounts for multi-week or sibling signups)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration CTA Section -->
+        <section id="register" class="bg-blue-600 text-white py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for an Adventure?</h2>
+                <p class="text-lg text-blue-100 max-w-xl mx-auto mb-8">
+                    Spaces fill up fast! Register today to secure your child's spot for a summer they'll never forget.
+                </p>
+                <a href="#" class="inline-block bg-white text-blue-600 px-10 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    Register Now
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="font-semibold text-lg text-white mb-2">DH Sports Camp</p>
+            <p class="mb-4">123 Adventure Lane, Your City, ST</p>
+            <p class="mb-4">
+                <a href="mailto:info@dhsportscamp.com" class="hover:text-white">info@dhsportscamp.com</a> | 
+                <a href="tel:555-123-4567" class="hover:text-white">(555) 123-4567</a>
+            </p>
+            
+            <!-- Simple Social Links (replace # with your links) -->
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="hover:text-white">Facebook</a>
+                <a href="#" class="hover:text-white">Instagram</a>
+            </div>
+            
+            <p class="text-sm">&copy; 2025 DH Sports Camp. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
